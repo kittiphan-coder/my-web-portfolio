@@ -1,0 +1,13 @@
+
+@import "tailwindcss";
+
+
+@theme{
+  --color-navbar:rgba(27, 26, 24, 0.6);
+  --color-primary: #0E0E0E;
+  --color-secondary:#1B1A18;
+  --color-border:#343230;
+  --color-text:#DAC5A7;
+}
+
+
