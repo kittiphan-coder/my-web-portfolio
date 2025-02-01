@@ -117,14 +117,14 @@ watch(
           </a>
         </div>
         <div>
-          <div class="w-[450px] mb-[64px]">
+          <div class="w-[320px] md:w-[450px] mb-[64px]">
             <h2 class="text-[40px] mb-8">Frontend Tools</h2>
             <p class="w-full text-2xl libre-bodoni-reg">
               JavaScript(ES6+), Vue.js, Nuxt.js, TypeScript, Tailwind, CSS3,
               HTML5, Git/GitHub,
             </p>
           </div>
-          <div class="w-[450px]">
+          <div class="w-[320px] md:w-[450px]">
             <h2 class="text-[40px] mb-8">CSS Tools</h2>
             <p class="w-full text-2xl libre-bodoni-reg">
               Figma, Adobe Photoshop, Adobe XD, Canvas
@@ -208,14 +208,14 @@ watch(
     </div>
     <!--Contract-->
     <div class="w-full flex flex-col justify-center items-center mt-8 gap-8">
-      <h1 class="text-[64px]" :ref="sections.contact">Contract Me</h1>
-      <p class="w-[700px] text-[32px] text-center">
+      <h1 class="text-[6vh]" :ref="sections.contact">Contract Me</h1>
+      <p class="max-w-[700px] text-[4vh] text-center">
         Premium web design, development, and SEO services to help your business
         stand out.
       </p>
       <form
         @submit.prevent="sendEmail"
-        class="w-[650px] flex flex-col gap-8 p-4 bg-secondary border-2 border-border rounded-[3px]"
+        class="max-w-[650px] w-full flex flex-col gap-8 p-4 bg-secondary border-2 border-border rounded-[3px]"
       >
         <div class="text-2xl libre-bodoni-reg">Contract</div>
         <input
