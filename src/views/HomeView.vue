@@ -79,7 +79,7 @@ watch(
         >
           <DotLottieVue
             class="w-8 h-8"
-            src="/src/assets/down.lottie"
+            src="/down.lottie"
             autoplay
             loop
             :speed="0.8"
