@@ -21,14 +21,14 @@ const sendEmail = async () => {
       "VUsNL_FL1PK63Xl3I"
     );
     alert("Email sent successfully!");
-    sended.value = false
+    sended.value = false;
   } catch (error) {
     console.error("Failed to send email", error);
   }
 };
 
 const navStore = useNavStore();
-const sended = ref(false)
+const sended = ref(false);
 const sections: Record<
   "home" | "about" | "work" | "contact",
   Ref<HTMLElement | null>
@@ -105,16 +105,15 @@ watch(
             solutions that businesses are proud to call their own. Wanna learn
             more? Here's
           </p>
-          <a
-            href="/Resume_Kittphan_Chareansuk.pdf"
-            download="Resume_Kittphan_Chareansuk.pdf"
-          >
-            <div
+          <div>
+            <a
+              href="/Resume_Kittphan_Chareansuk.pdf"
+              download="Resume_Kittphan_Chareansuk.pdf"
               class="mt-8 bg-secondary border-2 border-border cursor-pointer rounded-[2px] w-fit text-center p-2 text-2xl"
             >
               RESUME
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
         <div>
           <div class="w-[320px] md:w-[450px] mb-[64px]">
@@ -235,8 +234,13 @@ watch(
           placeholder="Message"
           v-model="message"
         ></textarea>
-        <button type="submit" :disabled="sended" class=" w-full py-4 text-center bg-text text-primary" :class="[sended?'':'cursor-pointer']">
-          {{sended?'Send Message':'Sent  Message'}}
+        <button
+          type="submit"
+          :disabled="sended"
+          class="w-full py-4 text-center bg-text text-primary"
+          :class="[sended ? '' : 'cursor-pointer']"
+        >
+          {{ sended ? "Send Message" : "Sent  Message" }}
         </button>
       </form>
     </div>
