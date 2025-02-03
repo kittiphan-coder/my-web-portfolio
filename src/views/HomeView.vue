@@ -106,7 +106,7 @@ watch(
             more? Here's
           </p>
           <a
-            href="/public/Resume_Kittphan_Chareansuk.pdf"
+            href="/Resume_Kittphan_Chareansuk.pdf"
             download="Resume_Kittphan_Chareansuk.pdf"
           >
             <div
